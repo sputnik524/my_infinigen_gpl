@@ -1,6 +1,18 @@
+/* This code is derived from https://github.com/blender/blender/tree/f4e1f62c62e6dae96d865d1fe0a47c1fb8b7a950 under a GPL-2.0-or-later license. 
+specifically:
+source/blender/makesdna/DNA_node_types.h
+source/blender/blenlib/BLI_math_rotation.h
+source/blender/blenlib/BLI_math_base.hh
+source/blender/blenlib/BLI_utildefines.h
+source/blender/blenlib/intern/math_base_inline.c
+source/blender/blenlib/intern/math_color.c
+source/blender/blenlib/intern/noise.cc
+source/blender/blenkernel/intern/material.cc
+intern/cycles/util/math_float3.h
+*/
+
 /* SPDX-License-Identifier: GPL-2.0-or-later
- * Copyright 2005 Blender Foundation
- * adapted by Zeyu Ma on date June 4, 2023 to compile terrain elements */
+ * Copyright 2005 Blender Foundation */
 
 #ifndef _UINT32_T
 #define _UINT32_T

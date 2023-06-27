@@ -1,10 +1,11 @@
+# This code is derived from https://github.com/DLR-RM/BlenderProc/blob/main/blenderproc/python/utility/Initializer.py under a GPL-3.0 license. 
+
 import bpy
 import logging
 
 logger = logging.getLogger(__name__)
 
 def enable_gpu(engine_name = 'CYCLES'):
-    # from: https://github.com/DLR-RM/BlenderProc/blob/main/blenderproc/python/utility/Initializer.py
     compute_device_type = None
     prefs = bpy.context.preferences.addons['cycles'].preferences
     # Use cycles

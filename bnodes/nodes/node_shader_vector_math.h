@@ -1,6 +1,7 @@
+// This code is derived from https://github.com/blender/blender/blob/f4e1f62c62e6dae96d865d1fe0a47c1fb8b7a950/intern/cycles/kernel/svm/math_util.h under a GPL-2.0-or-later license. 
+
 /* SPDX-License-Identifier: GPL-2.0-or-later
- * Copyright 2005 Blender Foundation. All rights reserved.
- * adapted by Zeyu Ma on date June 4, 2023 to compile geometry nodes */
+ * Copyright 2005 Blender Foundation. All rights reserved. */
 
 #ifndef __VECTORMATH__
 #define __VECTORMATH__

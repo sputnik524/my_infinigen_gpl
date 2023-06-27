@@ -1,7 +1,8 @@
+// This code is derived from https://github.com/blender/blender/blob/f4e1f62c62e6dae96d865d1fe0a47c1fb8b7a950/source/blender/blenlib/intern/noise.cc under a GPL-2.0-or-later AND BSD-3-Clause license. 
+
 /* SPDX-License-Identifier: GPL-2.0-or-later AND BSD-3-Clause
  * Copyright 2009-2010 Sony Pictures Imageworks Inc., et al. All Rights Reserved (BSD-3-Clause).
- *           2011 Blender Foundation (GPL-2.0-or-later).
- * adapted by Zeyu Ma on date June 4, 2023 to compile terrain elements */
+ *           2011 Blender Foundation (GPL-2.0-or-later). */
 
 /* -------------------------------------------------------------------- */
 /** \name Perlin Noise

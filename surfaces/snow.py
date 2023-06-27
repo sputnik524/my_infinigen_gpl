@@ -1,6 +1,4 @@
-# COPYRIGHT
-# adapted from Blender Real Snow add-on https://docs.blender.org/manual/en/latest/addons/object/real_snow.html
-# License: GPL
+# This code is derived from https://docs.blender.org/manual/en/latest/addons/object/real_snow.html under a GPL license. 
 
 from nodes.node_wrangler import Nodes
 from surfaces import surface

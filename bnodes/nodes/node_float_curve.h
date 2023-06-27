@@ -1,6 +1,7 @@
+// This code is derived from https://github.com/blender/blender/blob/f4e1f62c62e6dae96d865d1fe0a47c1fb8b7a950/intern/cycles/kernel/osl/shaders/node_ramp_util.h under a Apache-2.0 license. 
+
 /* SPDX-License-Identifier: Apache-2.0
- * Copyright 2011-2022 Blender Foundation
- * adapted by Zeyu Ma on date June 4, 2023 to compile geometry nodes */
+ * Copyright 2011-2022 Blender Foundation */
 
 #ifndef __FLOATCURVE__
 #define __FLOATCURVE__
