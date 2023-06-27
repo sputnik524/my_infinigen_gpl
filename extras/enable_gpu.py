@@ -1,4 +1,7 @@
 import bpy
+import logging
+
+logger = logging.getLogger(__name__)
 
 def enable_gpu(engine_name = 'CYCLES'):
     # from: https://github.com/DLR-RM/BlenderProc/blob/main/blenderproc/python/utility/Initializer.py
