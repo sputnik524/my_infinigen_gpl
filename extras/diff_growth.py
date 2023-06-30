@@ -1,4 +1,4 @@
-# TODO header
+# This code is derived from https://github.com/inca/blender-differential-growth under a GPL-3.0 license. 
 
 import os
 import sys
