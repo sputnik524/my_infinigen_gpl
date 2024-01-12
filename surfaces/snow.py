@@ -11,7 +11,7 @@ name = "snow"
 
 def shader_snow(nw, subsurface=1.0, **kwargs):
     nw.force_input_consistency()
-    position = nw.new_node('ShaderNodeNewGeometry', [])
+    # position = nw.new_node('ShaderNodeNewGeometry', [])
     combine_xyz = nw.new_node(
         Nodes.CombineXYZ,
         input_kwargs={'X': 0.36, 'Y': 0.46, 'Z': 0.6}
@@ -21,20 +21,20 @@ def shader_snow(nw, subsurface=1.0, **kwargs):
         input_kwargs={0: combine_xyz, 1: (0.5, 0.5, 0.5)},
         attrs={'operation': 'MULTIPLY'}
     )
-    mapping = nw.new_node(
-        Nodes.Mapping,
-        input_kwargs={'Vector': position, 'Scale': (12.0, 12.0, 12.0)}
-    )
-    voronoi_texture = nw.new_node(
-        Nodes.VoronoiTexture,
-        input_kwargs={'Vector': mapping, 'Scale': 30.0},
-        attrs={'feature': 'N_SPHERE_RADIUS'}
-    )
-    colorramp = nw.new_node(Nodes.ColorRamp, input_kwargs={'Fac': voronoi_texture.outputs["Radius"]})
-    colorramp.color_ramp.elements[0].position = 0.525
-    colorramp.color_ramp.elements[0].color = (0.0, 0.0, 0.0, 1.0)
-    colorramp.color_ramp.elements[1].position = 0.58
-    colorramp.color_ramp.elements[1].color = (1.0, 1.0, 1.0, 1.0)
+    # mapping = nw.new_node(
+    #     Nodes.Mapping,
+    #     input_kwargs={'Vector': position, 'Scale': (12.0, 12.0, 12.0)}
+    # )
+    # voronoi_texture = nw.new_node(
+    #     Nodes.VoronoiTexture,
+    #     input_kwargs={'Vector': mapping, 'Scale': 30.0},
+    #     attrs={'feature': 'N_SPHERE_RADIUS'}
+    # )
+    # colorramp = nw.new_node(Nodes.ColorRamp, input_kwargs={'Fac': voronoi_texture.outputs["Radius"]})
+    # colorramp.color_ramp.elements[0].position = 0.525
+    # colorramp.color_ramp.elements[0].color = (0.0, 0.0, 0.0, 1.0)
+    # colorramp.color_ramp.elements[1].position = 0.58
+    # colorramp.color_ramp.elements[1].color = (1.0, 1.0, 1.0, 1.0)
     
     principled_bsdf = nw.new_node(
         Nodes.PrincipledBSDF,
@@ -45,7 +45,7 @@ def shader_snow(nw, subsurface=1.0, **kwargs):
             'Subsurface Color': (0.904, 0.904, 0.904, 1.0),
             'Specular': 0.224,
             'Roughness': 0.1,
-            'Clearcoat': colorramp.outputs["Color"],
+            'Clearcoat': 0.5,
             'Clearcoat Roughness': 0.1,
         },
         attrs={'distribution': 'MULTI_GGX'}
